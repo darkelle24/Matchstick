@@ -15,6 +15,8 @@
 
 int my_str_isnum(char const *str, char end)
 {
+    if (str == NULL)
+        return (0);
     while (*str != end) {
         if (*str < 48 || *str > 57) {
             return (0);
